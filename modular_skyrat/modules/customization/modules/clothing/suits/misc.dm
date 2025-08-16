@@ -310,7 +310,6 @@
 
 /obj/item/clothing/suit/apron/overalls
 	greyscale_config_worn_digi = /datum/greyscale_config/overalls/worn/digi
-	greyscale_config_worn_better_vox = /datum/greyscale_config/overalls/worn/better_vox
 	greyscale_config_worn_vox = /datum/greyscale_config/overalls/worn/vox
 
 /obj/item/clothing/suit/apron/overalls/Initialize(mapload)

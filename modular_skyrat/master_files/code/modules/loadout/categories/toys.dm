@@ -144,10 +144,6 @@
 	name = "Tribal Salamander Plushie"
 	item_path = /obj/item/toy/plush/skyrat/tribal_salamander
 
-/datum/loadout_item/toys/plush/commanding_teshari
-	name = "Commanding Teshari Plushy"
-	item_path = /obj/item/toy/plush/skyrat/commanding_teshari
-
 /datum/loadout_item/toys/plush/snow_owl
 	name = "Snowy Owl Plush"
 	item_path = /obj/item/toy/plush/skyrat/snow_owl

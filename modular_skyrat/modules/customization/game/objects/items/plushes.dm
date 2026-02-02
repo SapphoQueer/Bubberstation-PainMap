@@ -234,14 +234,6 @@
 	attack_verb_simple = list("wurbles at", "warbles at")
 	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/wurble.ogg' = 1)
 
-/obj/item/toy/plush/skyrat/commanding_teshari
-	name = "commanding teshari plushy"
-	desc = "A very soft plush resembling a certain science-loving, command inclined Teshari. Just holding it makes you feel cared for."
-	icon_state = "plushie_alara"
-	attack_verb_continuous = list("peeps", "wurbles", "hugs")
-	attack_verb_simple = list("peeps", "wurbles", "hugs")
-	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/peep_once.ogg' = 1)
-
 /obj/item/toy/plush/skyrat/breakdancing_bird
 	name = "breakdancing bird plushie"
 	desc = "This little robotic bird plushie loves to give you a little dance in celebration of your achievements, no matter how mundane."
@@ -477,16 +469,6 @@
 	// All lowercase messages are intentional
 	responses = list("bunny who you best pray you never encounter, lest you suffer a fate worse than death.", "this is a bunny!", "I wonder what would happen if you took bunnies, and combined them with rabbits, and merged their properties and characteristics. It's something to think about.", "If you're cold, they're cold. Give them the deed to your house.", "bunny that goes yeah! woo! yeah! woo! yeah! woo! yeah! woo! yeah! woo! yeah!", "the bunnies are beyond my comprehension", "it's a bunny thing, you wouldn't get it", "this bunny has an unfathomable power level", "%pull the string and I'll bink at you...I'm your bunny.", "Bunny (1954)", "the bunny that pulls the strings....", )
 
-/obj/item/toy/plush/skyrat/chunko/inessa
-	name = "chunko fop medical bear"
-	desc = "An 'adorable', tired looking bear woman. This one produces fake smoke! Produced by the Chunko Fop Company <b><i>TM</i></b>. Spits out various Medical facts with a broken voicebox."
-	icon_state = "plushie_pfinessa"
-	gender = FEMALE
-	attack_verb_continuous = list("slashes", "dissects", "yawns", "smokes")
-	attack_verb_simple = list("slash", "dissect", "yawn", "smoke")
-	squeak_override = list('modular_skyrat/modules/emotes/sound/emotes/female/female_cough_3.ogg' = 1, 'modular_skyrat/modules/emotes/sound/emotes/female/female_cough_2.ogg' = 1, 'modular_skyrat/modules/emotes/sound/emotes/female/female_cough_1.ogg' = 1)
-	responses = list("The human body can survive three weeks without skiiiiiiiiiiin.", "The thigh bone is connected to the hip boooooooooone.", "Yeeeessss?", "Helloooooo.", "Don't be such a baby, ribs grow baaaaaaaaaack.",)
-
 // Donation reward for shyshadow
 /obj/item/toy/plush/skyrat/chunko/plushie_winrow
 	name = "dark and brooding lizard plush"
@@ -496,12 +478,6 @@
 	attack_verb_continuous = list("slashes", "bites", "rizzes")
 	attack_verb_simple = list("slash", "bite", "rizz")
 	responses = list("Am I looking in a mirror? Because what I see is beautiful.", "I'm not just a toy. I'm a romantic.", "I'm the diamond, and you're the rough because sooner or later...", "Is that mouth just for talking?", "Come on, don't be so hard on me. I'm so soft!", "Is that a glass of scotch? Because I've been thinking about buttering you up.", "Don't look stare for too long. You might get lost in my eyes.", "Oh wow! Looks like I'm not the only handsome thing around these parts.", "Do NOT the plushie. I am not a voodoo doll.",)
-
-// Donation reward for tobjv
-/obj/item/toy/plush/skyrat/tesh
-	name = "Squish-Me-Tesh"
-	desc = "Winner of Be Made Into A Plushy by ClownCo!"
-	icon_state = "plushie_tobjv2"
 
 // Donation reward for tobjv
 /obj/item/toy/plush/skyrat/immovable_rod
@@ -549,12 +525,6 @@
 	attack_verb_continuous = list("cuddles", "squishes", "blushes")
 	attack_verb_simple = list("cuddle", "squish", "blush")
 
-//Donation reward for Dalao Azure
-/obj/item/toy/plush/skyrat/plushie_azyre
-	name = "handsome chef plushie"
-	desc = "A need to cook only rivaled by a hunger for fox tail."
-	icon_state = "plushie_azyre"
-
 //Donation reward for Razurath
 /obj/item/toy/plush/skyrat/plushie_razurath
 	name = "science shark plushie"
@@ -569,15 +539,6 @@
 	name = "dwarf shark plushie"
 	desc = "Despite her height, the plushie regards you with keen and frankly unamused eyes; the look on her face, and the elegance of her little tiny coat tell you that she knows something you don't."
 	icon_state = "plushie_nedilla"
-
-//Donation reward for October23
-/obj/item/toy/plush/skyrat/plushie_elofy
-	name = "bumbling wolfgirl plushie"
-	desc = "A white-haired wolfgirl in a stylish red security skirt. Despite her scary cybernetic arm, she is soft to hug and only wishes to be praised and comforted."
-	icon_state = "plush_lonie"
-	attack_verb_continuous = list("snuggles", "nibbles", "awoos", "tail whaps")
-	attack_verb_simple = list("snuggle", "nibble", "awoo", "tail whap")
-	squeak_override = list('modular_zubbers/sound/voice/merowr.ogg' = 1)
 
 //Donation reward for syntax1112
 /obj/item/toy/plush/skyrat/plushie_syntax1112

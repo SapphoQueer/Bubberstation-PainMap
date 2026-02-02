@@ -538,7 +538,6 @@
 "uz" = (
 /obj/structure/table,
 /mob/living/basic/chicken/teshari,
-/obj/item/toy/plush/skyrat/commanding_teshari,
 /turf/open/floor/iron/small,
 /area/awaymission/secret/powered/construct)
 "uJ" = (
@@ -1264,7 +1263,6 @@
 /area/awaymission/secret/powered/construct)
 "RF" = (
 /obj/structure/table,
-/obj/item/toy/plush/skyrat/commanding_teshari,
 /turf/open/floor/iron/small,
 /area/awaymission/secret/powered/construct)
 "RI" = (

@@ -320,11 +320,6 @@
 	item_path = /obj/item/toy/plush/skyrat/immovable_rod
 	//ckeywhitelist = list("tobjv")
 
-/datum/loadout_item/toys/plush/tesh_plush
-	name = "Squish-Me-Tesh Plush"
-	item_path = /obj/item/toy/plush/skyrat/tesh
-	//ckeywhitelist = list("tobjv")
-
 /datum/loadout_item/uniform/redhosneck
 	name = "Black and Red Turtleneck"
 	item_path = /obj/item/clothing/under/rank/security/head_of_security/alt/roselia
@@ -387,11 +382,6 @@
 	item_path = /obj/item/toy/plush/skyrat/chunko/andrew
 //	donator_only = TRUE
 
-/datum/loadout_item/toys/plush/CFInessa
-	name = "Chunko Fop: Medical Bear Plushie"
-	item_path = /obj/item/toy/plush/skyrat/chunko/inessa
-//	donator_only = TRUE
-
 /datum/loadout_item/toys/plush/plushie_chiara
 	name = "Commanding Fox Plushie"
 	item_path = /obj/item/toy/plush/skyrat/plushie_chiara
@@ -428,11 +418,6 @@
 	item_path = /obj/item/clothing/suit/hooded/techpriest
 	//ckeywhitelist = list("imthinkingarbys")
 
-/datum/loadout_item/toys/plush/plushie_azyre
-	name = "Handsome Chef Plushie"
-	item_path = /obj/item/toy/plush/skyrat/plushie_azyre
-	//ckeywhitelist = list("dalaoazure")
-
 /datum/loadout_item/pocket_items/khicigs
 	name = "Kitsuhana Singularity Cigarettes"
 	item_path = /obj/item/storage/fancy/cigarettes/khi
@@ -453,11 +438,6 @@
 	name = "Dwarf Shark Plushie"
 	item_path = /obj/item/toy/plush/skyrat/plushie_razurath/second
 //	ckeywhitelist = list("razurath")
-
-/datum/loadout_item/toys/plush/plushie_elofy
-	name = "Bumbling Wolfgirl Plushie"
-	item_path = /obj/item/toy/plush/skyrat/plushie_elofy
-	//ckeywhitelist = list("october23") // Asked it to be public.
 
 /datum/loadout_item/suit/elofy
 	name = "Solar Admiral Coat"

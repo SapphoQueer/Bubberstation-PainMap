@@ -9,6 +9,14 @@
 #define UNDERWEAR_HIDE_UNDIES (1<<2)
 #define UNDERWEAR_HIDE_BRA (1<<3)
 
+//UNDERWEAR
+#define OFFSET_UNDERWEAR "underwear"
+#define	OFFSET_SOCKS "socks"
+#define OFFSET_SHIRT "shirt"
+#define OFFSET_BRA "bra"
+#define OFFSET_WRISTS "wrist"
+//
+
 ///Defines for icons used for modular bodyparts, created to make it easier to relocate the module or files if necessary.
 #define BODYPART_ICON_HUMAN 'modular_skyrat/modules/bodyparts/icons/human_parts_greyscale.dmi'
 #define BODYPART_ICON_MAMMAL 'modular_skyrat/modules/bodyparts/icons/mammal_parts_greyscale.dmi'
@@ -41,3 +49,4 @@
 #define	AI_HOLOGRAM_BEE "Bee"
 #define	AI_HOLOGRAM_REDPANDA "Red Panda"
 #define	AI_HOLOGRAM_FENNEC "Fennec"
+

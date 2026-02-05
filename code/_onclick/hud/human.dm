@@ -19,11 +19,22 @@
 	if(usr.hud_used.inventory_shown && targetmob.hud_used)
 		usr.hud_used.inventory_shown = FALSE
 		usr.client.screen -= targetmob.hud_used.toggleable_inventory
+		//BUBBER EDIT - Extra inventory
+		usr.client.screen -= targetmob.hud_used.extra_inventory
+		//
 	else
 		usr.hud_used.inventory_shown = TRUE
 		usr.client.screen += targetmob.hud_used.toggleable_inventory
+		// BUBBER EDIT - Extra inventory
+		if(usr.hud_used.extra_shown)
+			usr.client.screen += targetmob.hud_used.extra_inventory
+		//
 
 	targetmob.hud_used.hidden_inventory_update(usr)
+
+	// BUBBER EDIT - Extra inventory
+	targetmob.hud_used.extra_inventory_update(usr)
+	//
 	update_appearance()
 
 /atom/movable/screen/human/toggle/update_icon_state()
@@ -326,6 +337,13 @@
 		var/obj/item/organ/eyes/eyes = human_mob.get_organ_slot(ORGAN_SLOT_EYES)
 		if(eyes?.no_glasses)
 			blocked_slots |= ITEM_SLOT_EYES
+
+	// BUBBER EDIT - Extra inventory
+	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory + extra_inventory))
+		if(!inv.slot_id)
+			continue
+		inv.alpha = (blocked_slots & inv.slot_id) ? 128 : initial(inv.alpha)
+	// BUBBER EDIT END
 
 	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory))
 		if(!inv.slot_id)

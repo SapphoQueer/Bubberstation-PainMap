@@ -762,21 +762,27 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Total number of layers for mob overlays
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK
 /// Also consider updating layers_to_offset
-#define TOTAL_LAYERS 45 // SKYRAT EDIT CHANGE - ORIGINAL: 38
+#define TOTAL_LAYERS 49 // SKYRAT EDIT CHANGE - ORIGINAL: 38 | BUBBER EDIT: 45 > 49
 /// Mutations layer - Tk headglows, cold resistance glow, etc
-#define MUTATIONS_LAYER 44 // SKYRAT EDIT CHANGE - ORIGINAL: 37
+#define MUTATIONS_LAYER 48 // SKYRAT EDIT CHANGE - ORIGINAL: 37 | BUBBER EDIT: 44 > 48
 /// Mutantrace features (tail when looking south) that must appear behind the body parts
-#define BODY_BEHIND_LAYER 43 // SKYRAT EDIT CHANGE - ORIGINAL: 36
+#define BODY_BEHIND_LAYER 47 // SKYRAT EDIT CHANGE - ORIGINAL: 36 | BUBBER EDIT: 43 > 47
 /// Layer for bodyparts that should appear behind every other bodypart - Mostly, legs when facing WEST or EAST
-#define BODYPARTS_LOW_LAYER 42 // SKYRAT EDIT CHANGE - ORIGINAL: 35
+#define BODYPARTS_LOW_LAYER 46 // SKYRAT EDIT CHANGE - ORIGINAL: 35 | BUBBER EDIT: 42 > 46
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
-#define BODYPARTS_LAYER 41 // SKYRAT EDIT CHANGE - ORIGINAL: 34
+#define BODYPARTS_LAYER 45 // SKYRAT EDIT CHANGE - ORIGINAL: 34 | BUBBER EDIT: 41 > 45
 /// Mutantrace features (snout, body markings) that must appear above the body parts
-#define BODY_ADJ_LAYER 40 // SKYRAT EDIT CHANGE - ORIGINAL: 33
+#define BODY_ADJ_LAYER 44 // SKYRAT EDIT CHANGE - ORIGINAL: 33 | BUBBER EDIT: 40 > 44
 /// Underwear, undershirts, socks
-#define BODY_LAYER 39 // SKYRAT EDIT CHANGE - ORIGINAL: 32
+#define BODY_LAYER 43 // SKYRAT EDIT CHANGE - ORIGINAL: 32 | BUBBER EDIT: 39 > 43
 /// Eyes and eyelids
-#define EYES_LAYER 38 // SKYRAT EDIT CHANGE - ORIGINAL: 31
+#define EYES_LAYER 42 // SKYRAT EDIT CHANGE - ORIGINAL: 31 | BUBBER EDIT: 38 > 42
+// BUBBER EDIT undies
+#define UNDERWEAR_LAYER			41
+#define SOCKS_LAYER				40
+#define BRA_LAYER				39
+#define SHIRT_LAYER				38
+// BUBBER EDIT END
 /// Mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
 #define FRONT_MUTATIONS_LAYER 37 // SKYRAT EDIT CHANGE - ORIGINAL: 30
 /// Damage indicators (cuts and burns)

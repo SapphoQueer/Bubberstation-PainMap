@@ -669,6 +669,21 @@
 	if(!is_mouth_covered() && clean_lips())
 		. |= COMPONENT_CLEANED
 
+	// BUBBER EDIT - Extra inventory
+	if(!underwear_hidden() && w_underwear?.wash(clean_types))
+		update_worn_underwear()
+		. = TRUE
+	if(!socks_hidden() && w_socks?.wash(clean_types))
+		update_worn_socks()
+		. = TRUE
+	if(!(undershirt_hidden()) && w_shirt?.wash(clean_types))
+		update_worn_shirt()
+		. = TRUE
+	if(!bra_hidden() && w_bra?.wash(clean_types))
+		update_worn_bra()
+		. = TRUE
+	// BUBBER EDIT END
+
 	// Wash hands if exposed
 	if(!gloves && (clean_types & CLEAN_TYPE_BLOOD) && blood_in_hands > 0 && !(covered_slots & HIDEGLOVES))
 		blood_in_hands = 0

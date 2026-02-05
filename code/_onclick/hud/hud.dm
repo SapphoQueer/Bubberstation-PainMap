@@ -374,6 +374,10 @@ GLOBAL_LIST_INIT(available_erp_ui_styles, list(
 				screenmob.client.screen += static_inventory
 			if(toggleable_inventory.len && screenmob.hud_used && screenmob.hud_used.inventory_shown)
 				screenmob.client.screen += toggleable_inventory
+			// BUBBER EDIT - Extra inventory
+			if(extra_inventory.len && screenmob.hud_used && screenmob.hud_used.extra_shown)
+				screenmob.client.screen += extra_inventory
+			//
 			if(hotkeybuttons.len && !hotkey_ui_hidden)
 				screenmob.client.screen += hotkeybuttons
 			if(infodisplay.len)

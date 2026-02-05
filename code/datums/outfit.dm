@@ -125,9 +125,11 @@
 	var/preload = FALSE
 
 	/// Any undershirt. While on humans it is a string, here we use paths to stay consistent with the rest of the equips.
-	var/datum/sprite_accessory/undershirt = null
-	var/datum/sprite_accessory/underwear = null
-	var/datum/sprite_accessory/socks = null
+	//BUBBER EDIT - Underwear inventory - use the right paths
+	var/datum/sprite_accessory/undershirt/undershirt = null
+	var/datum/sprite_accessory/underwear/underwear = null
+	var/datum/sprite_accessory/socks/socks = null
+	//BUBBER EDIT END
 
 /**
  * Called at the start of the equip proc
@@ -215,23 +217,28 @@
 					WARNING("Unable to apply trim [id_trim] to [id_card] in outfit [name].")
 				user.update_ID_card()
 
-	if(suit_store)
-		EQUIP_OUTFIT_ITEM(suit_store, ITEM_SLOT_SUITSTORE)
-
 	if(undershirt)
-		user.undershirt = initial(undershirt.name)
+		w_shirt = w_shirt || initial(undershirt.shirt_obj) //BUBBER EDIT - Extra inventory - original: user.undershirt = initial(undershirt.name)
+
+	if(bra)
+		w_bra = w_bra || initial(bra.bra_obj) //BUBBER EDIT - Extra inventory - original: user.bra = initial(bra.name)
 
 	if(underwear)
-		user.underwear = initial(underwear.name)
+		w_underwear = w_underwear || initial(underwear.briefs_obj) //BUBBER EDIT - Extra inventory - original: user.underwear = initial(underwear.name)
 
 	if(socks)
-		user.socks = initial(socks.name)
+		w_socks = w_socks || initial(socks.socks_obj) //BUBBER EDIT - Extra inventory - original: user.socks = initial(socks.name)
 
-
-	// SKYRAT EDIT ADDITION START - Underwear and bra split
-	if(bra)
-		user.bra = initial(bra.name)
-	// SKYRAT EDIT END
+	// BUBBER EDIT - Extra inventory
+	if(w_underwear)
+		EQUIP_OUTFIT_ITEM(w_underwear, ITEM_SLOT_UNDERWEAR)
+	if(w_socks)
+		EQUIP_OUTFIT_ITEM(w_socks, ITEM_SLOT_SOCKS)
+	if(w_shirt)
+		EQUIP_OUTFIT_ITEM(w_shirt, ITEM_SLOT_SHIRT)
+	if(w_bra)
+		EQUIP_OUTFIT_ITEM(w_bra, ITEM_SLOT_BRA)
+	//
 
 	if(accessory)
 		var/obj/item/clothing/under/U = user.w_uniform

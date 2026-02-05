@@ -193,6 +193,28 @@
 				return
 			w_uniform = equipping
 			update_worn_undersuit()
+		// BUBBER EDIT - Extra inventory
+		if(ITEM_SLOT_UNDERWEAR)
+			if(w_underwear)
+				return
+			w_underwear = equipping
+			update_worn_underwear()
+		if(ITEM_SLOT_SHIRT)
+			if(w_shirt)
+				return
+			w_shirt = equipping
+			update_worn_shirt()
+		if(ITEM_SLOT_BRA)
+			if(w_bra)
+				return
+			w_bra = equipping
+			update_worn_bra()
+		if(ITEM_SLOT_SOCKS)
+			if(w_socks)
+				return
+			w_socks = equipping
+			update_worn_socks()
+		//BUBBER EDIT END
 		if(ITEM_SLOT_LPOCKET)
 			l_store = equipping
 			update_pockets()
@@ -241,6 +263,24 @@
 				dropItemToGround(wear_id)
 			if(belt && !can_equip(belt, ITEM_SLOT_BELT, TRUE, ignore_equipped = TRUE))
 				dropItemToGround(belt)
+	// BUBBER EDIT - Extra inventory
+	else if(item_dropping == w_underwear)
+		w_underwear = null
+		if(!QDELETED(src))
+			update_worn_underwear()
+	else if(item_dropping == w_socks)
+		w_socks = null
+		if(!QDELETED(src))
+			update_worn_socks()
+	else if(item_dropping == w_shirt)
+		w_shirt = null
+		if(!QDELETED(src))
+			update_worn_shirt()
+	else if(item_dropping == w_bra)
+		w_bra = null
+		if(!QDELETED(src))
+			update_worn_bra()
+	//
 	else if(item_dropping == gloves)
 		//SKYRAT EDIT ADDITION - ERP UPDATE
 		if(gloves.breakouttime) //when unequipping a straightjacket

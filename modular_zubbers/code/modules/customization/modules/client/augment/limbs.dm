@@ -61,7 +61,10 @@
 					new_limb.base_limb_id = BODYPART_ID_DIGITIGRADE
 					new_limb.bodyshape = old_limb.bodyshape
 
-		new_limb.replace_limb(augmented)
+		if(!new_limb.replace_limb(augmented))
+			qdel(new_limb)
+			return
+
 		qdel(old_limb)
 
 //HEADS
